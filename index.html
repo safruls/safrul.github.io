@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's become a Quiz Master</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">  
+</head>
+<body>
+    <div class="container">
+        <div id="home" class="flex-center flex-column">
+            <h1>Quiz Master</h1>
+            <h2>Welcome!</h2>
+            <h3 class="explanation">Please insert your name first, then click 'Save' and then click 'Play'!</h3>
+            <!-- <div id="question">Question</div> -->
+            <input type="text" class="user" placeholder="Insert your name!">
+            <button onclick="saveUser()" type="button" class="btn">Save</button>
+            <a class="btn" href="game.html">Play</a>
+            <!-- <a class="btn" href="highscores.html">High Scores</a> -->
+            <div id="audio">
+                <audio src="./sound/japan.mp3" id="myAudio"></audio>
+                <button onclick="playAudio()" type="button" class="btn">&#9658</button>
+                <button onclick="pauseAudio()" type="button" class="btn">&#10074&#10074</button> 
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Music is copyright free.</p>
+        <p>&#169;2020 Safrul Setiawan. All rights reserved.</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
